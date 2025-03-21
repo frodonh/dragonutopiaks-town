@@ -1,0 +1,159 @@
+{
+	"dragonlv3a":
+	{
+		"name" :
+		{
+			"plural" : "蝶翼龙幼崽",
+			"singular" : "蝶翼龙幼崽"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "dragonutopiaks",
+		"upgrades": ["dragonlv3up"],
+		"hasDoubleWeek": true,
+		"level" : 3,
+		"attack" : 8,
+		"defense" : 6,
+		"damage" :
+		{
+			 "min" : 5,
+			 "max" : 8
+		},
+		"growth" : 5,
+		"horde" : 5,
+		"shots" : 24,
+		"hitPoints" : 20,
+		"speed" : 13,
+		"fightValue" : 433,
+		"aiValue" : 383,
+		"doubleWide" : false,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"graphics" :
+		{
+			"animation" : "dragonutopiaks/creatures/battle/lv3a.def",
+			"map" : "dragonutopiaks/creatures/map/lv3amap.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv3as.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv3ab.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "dragonutopiaks/creatures/projectile/bansh.def",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},	
+		"sound" :
+		{
+			"attack": "FAERATTK.wav",
+			"defend": "FAERDFND.wav",
+			"killed": "FAERKILL.wav",
+			"move": "FAERMOVE.wav",
+			"wince": "FAERWNCE.wav"
+                },
+		"abilities":
+		{
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"canFly" : 
+			{	
+			    "type" : "FLYING"	
+			},
+			"extraRetaliation" :
+			{
+				"type" : "ADDITIONAL_RETALIATION",
+				"val" : 1
+			},
+			"paralize" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.paralyze",
+				"val" : 15
+			},
+			"paralyzeImm" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.paralyze",
+				"addInfo" : 0
+			}		
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.paralyze", //paralyze,
+					"addInfo" : 74
+				},
+				"values" : [ 5, 5, 5, 5, 10, 10, 10, 15, 15, 20 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}
+
+
+

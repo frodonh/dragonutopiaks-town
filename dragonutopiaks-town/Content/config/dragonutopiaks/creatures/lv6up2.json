@@ -1,0 +1,136 @@
+{
+	"dragonlv6up2":
+	{
+		"name" :
+		{
+			"plural" : "生命圣龙",
+			"singular" : "生命圣龙"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "dragonutopiaks",
+		"aiValue" : 2161,
+		"attack" : 18,
+		"doubleWide" : true,
+        "cost" :
+		{
+			"gold" : 1800
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 15
+		},
+		"defense" : 22,
+		"shots" : 24,
+		"fightValue" : 1833,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "dragonutopiaks/creatures/battle/lv6up2.def",
+			"map" : "dragonutopiaks/creatures/map/lv6up2map.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv6up2s.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv6up2b.bmp",			
+			"timeBetweenFidgets" : 1
+               },
+		"growth" : 2,
+		"hitPoints" : 120,
+		"level" : 6,
+		
+		"sound" :
+		{
+			"attack": "C202ATTK.wav",
+			"defend": "C202DFND.wav",
+			"killed": "C202KILL.wav",
+			"move": "C202MOVE.wav",
+			"wince": "C202WNCE.wav"
+		},
+		"speed" :13,
+		"abilities":
+		{
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"regeneration" : 
+			{ 
+			   "type" : "HP_REGENERATION", 
+			   "val" : 100000 
+			},
+			"fireBreath" :	
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"damageReduction": 
+			{
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 20
+			},
+			"defensiveStance" : 
+			{
+				"type" : "DEFENSIVE_STANCE",
+				"val" : 5
+			},
+			"healer" :
+			{
+				"type" : "HEALER",
+				"subtype" : "spell.firstAid"
+			},
+			"castsCure" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.cure",
+				"val" : 3,
+				"addInfo" : 3
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY",				
+				},
+				"values" : [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ]
+			}
+		]	
+	}
+}

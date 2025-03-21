@@ -1,0 +1,57 @@
+{
+	"dragonejoseph" :
+	{
+		"class" : "dragonMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/1Joseph/s-spec129.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/1Joseph/spec129.bmp",
+			"large" : "dragonutopiaks/heroes/1Joseph/hpl008sh.bmp",
+			"small" : "dragonutopiaks/heroes/1Joseph/hps008sh.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills":
+		[
+			{ "skill" : "fireMagic", "level": "basic" },
+			{ "skill" : "offence", "level": "basic" }
+		],
+		"spellbook" :
+		[
+		       "fireball"
+		],
+		"texts" :
+		{
+			"name" : "巴哈姆特",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "英雄施放火系攻击魔法造成的伤害提高30%，英雄率领的所有龙系生物士气+1。",
+				"tooltip" : "火之破灭",
+				"name" : "火之破灭"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"fireMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.fire",
+					"val" : 30,
+					"valueType" : "BASE_NUMBER"
+				},
+				"salamanderEnchantMorale":
+				{
+					"type" : "MORALE",
+					"val" : 1,
+					"limiters" : ["DRAGON_NATURE"]
+				}
+			}
+		}
+	}
+}

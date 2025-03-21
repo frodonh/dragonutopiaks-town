@@ -1,0 +1,89 @@
+{
+	"dragonPower" : {
+		"name" : "龙力术",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"basic" : {
+			"images" : {
+				"small" : "dragonutopiaks/skills/dragonPower/dragonPowerBasicSmall",
+				"medium" : "dragonutopiaks/skills/dragonPower/dragonPowerBasicMedium",
+				"large" : "dragonutopiaks/skills/dragonPower/dragonPowerBasicLarge"
+			},
+			"description" : "{初级龙力术}\n\n初级龙力术可以让你部队中的龙攻击力和防御力+2。如果英雄同时掌握高级龙力术和高级龙抗术，则所有部队均可被视为龙。",
+			"effects" : {
+				"dragonAttack" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 2,
+					"limiters": ["DRAGON_NATURE"]
+				},
+				"dragonDefence" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype": "defence",
+					"val": 2,
+					"limiters": ["DRAGON_NATURE"]
+				}
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "dragonutopiaks/skills/dragonPower/dragonPowerAdvSmall",
+				"medium" : "dragonutopiaks/skills/dragonPower/dragonPowerAdvMedium",
+				"large" : "dragonutopiaks/skills/dragonPower/dragonPowerAdvLarge"
+			},
+			"description" : "{中级龙力术}\n\n中级龙力术可以让你部队中的龙攻击力和防御力+3，速度+1。如果英雄同时掌握高级龙力术和高级龙抗术，则所有部队均可被视为龙。",
+			"effects" : {
+				"dragonAttack" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 3,
+					"limiters": ["DRAGON_NATURE"]
+				},
+				"dragonDefence" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype": "defence",
+					"val": 3,
+					"limiters": ["DRAGON_NATURE"]
+				},
+				"dragonSpeed" : {
+					"type" : "STACKS_SPEED",
+					"val": 1,
+					"limiters": ["DRAGON_NATURE"]
+				}
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "dragonutopiaks/skills/dragonPower/dragonPowerExpSmall",
+				"medium" : "dragonutopiaks/skills/dragonPower/dragonPowerExpMedium",
+				"large" : "dragonutopiaks/skills/dragonPower/dragonPowerExpLarge"
+			},
+			"description" : "{高级龙力术}\n\n高级龙力术可以让你部队中的龙攻击力和防御力+5，速度+2。如果英雄同时掌握高级龙力术和高级龙抗术，则所有部队均可被视为龙。",
+			"effects" : {
+				"dragonAttack" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 5,
+					"limiters": ["DRAGON_NATURE"]
+				},
+				"dragonDefence" : {
+					"type" : "PRIMARY_SKILL",
+					"subtype": "defence",
+					"val": 5,
+					"limiters": ["DRAGON_NATURE"]
+				},
+				"dragonSpeed" : {
+					"type" : "STACKS_SPEED",
+					"val": 2,
+					"limiters": ["DRAGON_NATURE"]
+				},
+				"zeroLuck" : {
+					"type" : "LUCK",
+					"val": 0
+				}
+			}
+		}
+	}
+}

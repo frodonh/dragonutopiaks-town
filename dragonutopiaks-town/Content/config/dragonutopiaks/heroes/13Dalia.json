@@ -1,0 +1,61 @@
+{
+	"dragonedalia" :
+	{
+		"class" : "dragonMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/13Dalia/s-spec141.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/13Dalia/spec141.bmp",
+			"large" : "dragonutopiaks/heroes/13Dalia/hpl081ov.bmp",
+			"small" : "dragonutopiaks/heroes/13Dalia/hps081ov.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ballista", "max" : 1, "min" : 1 },
+			{ "creature" : "dragonlv1", "min" :  6, "max" :  9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "resistance", "level": "basic" },
+			{ "skill" : "sorcery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "梅达利卡纳",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "敌方生物魔法抗性-10%，在抵抗力上每级获得5%的奖励。",
+				"tooltip" : "魔法屏障",
+				"name" : "魔法屏障",
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"magicVulnerability":
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "any",
+					"val" : -10,
+					"valueType" : "BASE_NUMBER",
+					"propagator": "BATTLE_WIDE",
+					"limiters" : [ "OPPOSITE_SIDE" ]
+				},
+				"resistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,133 @@
+{
+	"dragonlv6":
+	{
+		"name" :
+		{
+			"plural" : "生命之龙",
+			"singular" : "生命之龙"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 5
+		},
+		"faction" : "dragonutopiaks",
+		"upgrades": ["dragonlv6up"],
+		"aiValue" : 1761,
+		"attack" : 15,
+		"doubleWide" : true,
+         "cost" :
+		{
+			"gold" : 1200
+		},
+		"damage" :
+		{
+			 "max" : 18,
+			 "min" : 15
+		},
+		"defense" : 18,
+		"fightValue" : 1633,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "dragonutopiaks/creatures/battle/lv6.def",
+			"map" : "dragonutopiaks/creatures/map/lv6map.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv6s.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv6b.bmp",
+			"timeBetweenFidgets" : 1
+               },
+		"growth" : 2,
+		"shots" : 24,
+		"hitPoints" : 100,
+		"level" : 6,
+		
+		"sound" :
+		{
+			"attack": "TREXATTK.wav",
+			"defend": "TREXDFND.wav",
+			"killed": "TREXKILL.wav",
+			"move": "TREXMOVE.wav",
+			"wince": "TREXWNCE.wav"
+		},
+		"speed" : 13,
+		"abilities":
+		{
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"fireBreath" :	
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"damageReduction": 
+			{
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 15
+			},
+			"defensiveStance" : 
+			{
+				"type" : "DEFENSIVE_STANCE",
+				"val" : 2
+			},
+			"healer" :
+			{
+				"type" : "HEALER",
+				"subtype" : "spell.firstAid"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY",				
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]	
+	}
+}
+

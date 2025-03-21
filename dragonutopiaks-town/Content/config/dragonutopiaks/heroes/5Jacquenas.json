@@ -1,0 +1,51 @@
+{
+	"dragonejacquenas" :
+	{
+		"class" : "dragonMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/5Jacquenas/s-spec133.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/5Jacquenas/spec133.bmp",
+			"large" : "dragonutopiaks/heroes/5Jacquenas/HPL062DM.bmp",
+			"small" : "dragonutopiaks/heroes/5Jacquenas/HPS062DM.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills" :
+		[       
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		"texts" :
+		{
+			"name" : "伊格尼尔",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "英雄初始掌握所有原版游戏中的全部火系魔法。",
+                "tooltip" : "灭世之炎",
+                "name" : "灭世之炎"
+			}
+		},
+		"spellbook" :
+		[
+			"armageddon", "bloodlust", "curse", "protectFire", "blind", "fireWall", "fireball", "landMine", "misfortune", "berserk", "fireShield", "frenzy", "inferno", "slayer", "fireElemental", "sacrifice"
+		],
+		"specialty" : {
+		"bonuses" : {
+		}
+	}
+  }
+}

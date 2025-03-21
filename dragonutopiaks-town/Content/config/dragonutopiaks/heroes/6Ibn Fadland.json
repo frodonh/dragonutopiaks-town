@@ -1,0 +1,66 @@
+{
+	"dragonefadland" :
+	{
+		"class" : "dragonMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/6Ibn Fadland/s-spec134.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/6Ibn Fadland/spec134.bmp",
+			"large" : "dragonutopiaks/heroes/6Ibn Fadland/hpl094wl.bmp",
+			"small" : "dragonutopiaks/heroes/6Ibn Fadland/hps094wl.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "navigation"
+			},
+		],
+		"texts" :
+		{
+			"name" : "乌璐蒂亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "英雄陆地与海上移动力增加150，并可安全通过漩涡，所带领生物的速度加1。",
+				"tooltip" : "时之赐福",
+				"name" : "时之赐福"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"navigationseaBoost" :{
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 150
+				},
+				"navigationlandBoost" :{
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementLand",
+				    "val" : 150
+				},
+				"whirlpoolProtection" :{
+					"type" : "WHIRLPOOL_PROTECTION",
+					"val" : 0
+				},
+				"salamanderEnchantSpeed":{
+					"type" : "STACKS_SPEED",
+					"val" : 1
+				}
+			}
+		}
+	}
+}

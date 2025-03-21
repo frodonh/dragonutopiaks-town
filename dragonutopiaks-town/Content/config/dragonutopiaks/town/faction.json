@@ -1,0 +1,194 @@
+{
+	"dragonutopiaks" :
+	{
+		"name" : "龙之国度",
+		"description" : "{XX}\n种族阵营： XX，XX\n种族地形： XX\n所在地： XX大陆-XX王国\n补充中。",
+		"nativeTerrain": "grass",
+		"boat" : "boatCastle",
+		"alignment" : "good",
+		"creatureBackground" :
+		{
+			"120px" : "dragonutopiaks/creature-bg-120px.bmp",
+			"130px" : "dragonutopiaks/creature-bg-130px.bmp"
+		},
+		"town" :
+		{
+			"mapObject" :
+			{
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"castle" :  { "animation" : "dragonutopiaks/adventure-map/town/town-castle.def" },
+					"citadel" : { "animation" : "dragonutopiaks/adventure-map/town/town-citadel.def" },
+					"fort"    : { "animation" : "dragonutopiaks/adventure-map/town/town-citadel.def" },
+					"village" : { "animation" : "dragonutopiaks/adventure-map/town/town-village.def" },
+					"capitol" : { "animation" : "dragonutopiaks/adventure-map/town/town-capitol.def" }
+				}
+			},
+
+			"musicTheme" : ["music/factions/CampainMusic19d"],
+			"defaultTavern" : 5,
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 4,
+				"ranger"       : 2,
+				"druid"        : 2,
+				"alchemist"    : 5,
+				"wizard"       : 5,
+				"demoniac"     : 5,
+				"heretic"      : 5,
+				"deathknight"  : 5,
+				"necromancer"  : 5,
+				"warlock"      : 5,
+				"overlord"     : 5,
+				"barbarian"    : 5,
+				"battlemage"   : 5,
+				"beastmaster"  : 5,
+				"witch"        : 5,
+				"planeswalker" : 5,
+				"elementalist" : 5,
+                "dragonMight"    : 5,
+                "dragonMagic"    : 5
+			},
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"guildSpells" : {
+				"bless": 10,
+                "bloodlust": 0,
+                "cure": 10,
+                "curse": 0,
+                "dispel": 10,
+                "haste": 5,
+                "magicArrow": 30,
+                "protectFire": 3,
+                "protectWater": 3,
+                "shield": 10,
+                "slow": 5,
+                "stoneSkin": 5,
+                "summonBoat": 3,
+                "viewAir": 3,
+                "viewEarth": 3,
+                "blind": 4,
+                "deathRipple": 0,
+                "disguise": 2,
+                "disruptingRay": 6,
+                "fireWall": 4,
+                "fortune": 4,
+                "iceBolt": 50,
+                "lightningBolt": 4,
+                "precision": 6,
+                "quicksand": 4,
+                "removeObstacle": 4,
+                "scuttleBoat": 6,
+                "visions": 2,
+                "weakness": 2,
+                "airShield": 4,
+                "animateDead": 0,
+                "antiMagic": 12,
+                "destroyUndead": 12,
+                "earthquake": 4,
+                "fireball": 8,
+                "forceField": 4,
+                "forgetfulness": 8,
+                "frostRing": 16,
+                "hypnotize": 4,
+                "landMine": 8,
+                "mirth": 4,
+                "misfortune": 4,
+                "protectAir": 2,
+                "protectEarth": 4,
+                "teleport": 8,
+                "armageddon": 0,
+                "berserk": 5,
+                "chainLightning": 10,
+                "clone": 5,
+                "counterstrike": 5,
+                "fireShield": 5,
+                "frenzy": 5,
+                "inferno": 5,
+                "meteorShower": 10,
+                "prayer": 10,
+                "resurrection": 10,
+                "slayer": 5,
+                "sorrow": 5,
+                "townPortal": 10,
+                "waterWalk": 10,
+                "airElemental": 4,
+                "dimensionDoor": 4,
+                "earthElemental": 5,
+                "fireElemental": 5,
+                "fly": 5,
+                "implosion": 4,
+                "magicMirror": 6,
+                "sacrifice": 0,
+                "waterElemental": 5
+			},
+			"townBackground": "dragonutopiaks/town-screen/background.bmp",
+			"guildWindow": "dragonutopiaks/town-screen/mage-guild.bmp",
+			"buildingsIcons": "dragonutopiaks/town-hall.json",
+			"hallBackground": "dragonutopiaks/town-screen/TPTHBKFG13.png",
+            "primaryResource" : "crystal",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special1", "special3" ], [ "special2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "horde1", "horde1Upgr" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl3a", "dwellingUpLvl3a" ] ],
+				[ [ "dwellingLvl4", "dwellingUpLvl4", ], [ "dwellingLvl4a", "dwellingUpLvl4a", ], [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl5a", "dwellingUpLvl5a" ] ],
+				[ [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl6a", "dwellingUpLvl6a" ], [ "dwellingLvl7", "dwellingUpLvl7" ], [ "dwellingLvl7a", "dwellingUpLvl7a" ] ]
+			],
+			"creatures" :
+			[
+				["dragonlv1", "dragonlv1up"],
+				["dragonlv2", "dragonlv2up"],
+				["dragonlv3", "dragonlv3up", "dragonlv3a", "dragonlv3aup"],
+				["dragonlv4", "dragonlv4up", "dragonlv4a", "dragonlv4aup"],
+				["dragonlv5", "dragonlv5up", "dragonlv5a", "dragonlv5aup", "dragonlv5up2", "dragonlv5aup2"],
+				["dragonlv6", "dragonlv6up", "dragonlv6a", "dragonlv6aup", "dragonlv6up2", "dragonlv6aup2"],
+				["dragonlv7", "dragonlv7up", "dragonlv7a", "dragonlv7aup", "dragonlv7up2", "dragonlv7aup2"]
+			],
+			"horde" : [ 1, -1 ],
+			"icons" : {
+				"fort" : {
+					"built" : {
+						"large" : "dragonutopiaks/icons/fort-builded-big.bmp",
+						"small" : "dragonutopiaks/icons/fort-builded-small.bmp"
+					},
+					"normal" : { "large" : "dragonutopiaks/icons/fort-big.bmp", "small" : "dragonutopiaks/icons/fort-small.bmp" }
+				},
+				"village" : {
+					"built" : {
+						"large" : "dragonutopiaks/icons/hall-builded-big.bmp",
+						"small" : "dragonutopiaks/icons/hall-builded-small.bmp"
+					},
+					"normal" : { "large" : "dragonutopiaks/icons/hall-big.bmp", "small" : "dragonutopiaks/icons/hall-small.bmp" }
+				}
+                        },
+			"mageGuild" : 5,
+			"moatAbility" : "castleMoat",
+			"names" : [
+				"伊夫涅尔",
+                "艾维尼特",
+                "布萨图拉",
+                "图什维尼",
+                "敦格昂",
+                "撒多维度",
+                "斯维林",
+                "福瑞卡塞",
+                "瓦里瑞拉",
+                "火龙谷",
+                "萨特莱德",
+                "龙迹堡",
+                "圣龙之森",
+                "魔龙深渊",
+                "幽夜龙谷",
+                "毒龙之沼",
+                "龙之壁垒"
+			]
+		}
+	}
+}
+

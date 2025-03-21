@@ -1,0 +1,735 @@
+{
+	"dragonutopiaks" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"mageGuild1" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "1级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					},
+					"id" : 0
+				},
+				"mageGuild2" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"cost" :
+					{
+						"wood" : 4,
+						"mercury" : 4,
+						"ore" : 4,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"id" : 1,
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 6,
+						"sulfur" : 5,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"id" : 2,
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 8,
+						"ore" : 8,
+						"sulfur" : 5,
+						"crystal" : 8,
+						"gems" : 8,
+						"gold" : 1000
+					},
+					"id" : 3,
+					"upgrades" : "mageGuild3"
+				},
+				"mageGuild5" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "5级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 10,
+						"ore" : 5,
+						"sulfur" : 10,
+						"crystal" : 10,
+						"gems" : 10,
+						"gold" : 1000
+					},
+					"id" : 4,
+					"upgrades" : "mageGuild4"	
+                },	
+				"tavern" :
+				{
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 5
+				},
+				"fort" :
+				{
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"id" : 7
+				},
+				"citadel" :
+				{
+					"name" : "大本营",
+					"description" : "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"id" : 8,
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "城堡",
+					"description" : "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"cost" :
+					{
+						"gold" : 5000,
+						"wood" : 10,
+						"ore" : 10
+					},
+					"id" : 9,
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+					"id" : 10,
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"id" : 11,
+					"requires" : [ "tavern"],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["marketplace"], ["blacksmith"] ],
+					"id" : 12,
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"id" : 13,
+					"requires" : ["castle"] ,
+					"upgrades" : "cityHall"
+				},
+				"marketplace" :
+				{
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 14
+				},
+				"resourceSilo" :
+				{
+					"name" : "物资仓库",
+					"description" : "物资仓库每天为你额外提供1水晶。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"produce": { "crystal": 1 },
+					"requires" : ["marketplace"],
+					"id" : 15
+				},
+				"blacksmith" :
+				{
+					"description" : "铁匠铺可向你的军队提供弩车。",
+					"name" : "铁匠铺",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					},
+					"warMachine" : "ballista",
+					"id" : 16
+				},
+				"special1" : 
+				{
+					"description" : "龙魂树每天额外为王国提供1个木材1个矿石和500金币。",
+					"name" : "龙魂树",
+					"cost" : 
+					{
+                        "wood" : 5,
+						"ore": 5,
+						"gold" : 2500
+					},
+					"produce": { "gold":500, "wood":1,	"ore": 1 },
+					"requires" : ["mageGuild1"],
+					"id" : 17
+				},
+				"horde1" :
+				{
+					"description" : "生命龙巢让火翼龙幼崽的产量每周增加4个。",
+					"name" : "生命龙巢",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"id" : 18
+				},
+				"horde1Upgr" :
+				{
+					"description" : "生命龙巢让火翼龙的产量每周增加4个。",
+					"name" : "生命龙巢",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"requires" : ["horde1"],
+					"id" : 19,
+					"mode" : "auto"
+				},
+				"special2" : 
+				{
+					"description" : "龙神之柱使使守城英雄攻击、防御、力量和幸运+2，魔法值消耗-2。",
+					"name" : "龙神之柱",
+					"cost" : 
+					{
+                        "wood" : 5,
+						"ore": 5,
+						"gold" : 2000
+					},
+					"bonuses" : [ 
+						{ 
+						"type" : "PRIMARY_SKILL", 
+						"subtype" : "primarySkill.attack",
+						"val": 2, 
+						"propagator" : "VISITED_TOWN_AND_VISITOR" },
+						{ 
+						"type" : "PRIMARY_SKILL", 
+						"subtype" : "primarySkill.defence",
+						"val": 2, 
+						"propagator" : "VISITED_TOWN_AND_VISITOR" },
+						{ 
+						"type" : "PRIMARY_SKILL", 
+						"subtype" : "primarySkill.spellpower",
+						"val": 2, 
+						"propagator" : "VISITED_TOWN_AND_VISITOR" },
+						{ 
+						"type" : "LUCK", 
+						"val": 2, 
+						"propagator" : "VISITED_TOWN_AND_VISITOR" },
+						{ 
+						"type" : "CHANGES_SPELL_COST_FOR_ALLY", 
+						"val": 2, 
+						"propagator" : "VISITED_TOWN_AND_VISITOR" } ],
+					"requires" : ["mageGuild1"],
+					"id" : 21
+				},
+				"special3" :
+				{
+					"description" : "在祖龙祭坛中，你可以花钱学习四种派系的魔法，并且使来访英雄的魔法值恢复+5/天。",
+					"name" : "祖龙祭坛",
+					"cost" :
+					{
+						"wood"   : 10,
+						"ore"    : 10,
+						"gold" : 5000
+					},
+					"marketModes" : ["resource-skill"],
+					"configuration" : {
+						"visitMode" : "bonus",
+						"rewards" : [
+							{
+								"message" : "祖龙祭坛使来访英雄的魔法值恢复+5/天。",
+								"bonuses" : [ { "duration": "ONE_WEEK", "type": "MANA_REGENERATION", "val": 5} ]
+							}
+						]
+					},
+					"requires" : ["anyOf", ["dwellingLvl4"], ["dwellingLvl4a"]],
+					"id" : 22
+				},				
+				"grail" :
+				{
+                    "description" : "龙神水晶像使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，使所有己方英雄四系魔法的杀伤力+50%，使所带领的龙系生物速度+1，士气+2。",	
+					"name" : "龙神水晶",
+					"id" : 26,
+					"produce": { "gold": 5000 },
+					"bonuses": [
+								{ "type": "SPELL_DAMAGE", "subtype": "spellSchool.fire", "val": 50 ,"propagator": "PLAYER_PROPAGATOR"  },
+								{ "type" : "STACKS_SPEED",	"val" : 1, "limiters" : ["DRAGON_NATURE"]	},
+								{ "type" : "MORALE", "val" : 2, "limiters" : ["DRAGON_NATURE"]	}
+								],
+					"mode" : "grail"
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "地龙之巢允许你招募地龙幼崽。",
+					"name" : "地龙之巢",
+					"cost" : 
+					{
+						"gold" : 500,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"requires" : [ "fort" ],
+					"id" : 30
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "火翼龙之巢允许你招募火翼龙幼崽。",
+					"name" : "火翼龙之巢",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"requires" : [ "dwellingLvl1" ],
+					"id" : 31
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "土龙之森允许你招募土龙。",
+					"name" : "土龙之森",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"requires" :["allOf", [ "anyOf", [ "dwellingLvl4" ], [ "dwellingLvl4a" ] ], ["fort"], [ "noneOf", [ "dwellingLvl3a" ] ] ],
+					"id" : 32
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "冠龙营地允许你招募冠龙幼崽。",
+					"name" : "冠龙营地",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"ore" : 5
+					},
+					"requires" : [ "allOf", [ "blacksmith" ], [ "dwellingLvl1" ], [ "noneOf", [ "dwellingLvl4a" ] ] ],
+					"id" : 33
+				},
+				"dwellingLvl5" :
+				{
+					"description" : "暗龙之巢允许你招募暗夜地龙。",
+					"name" : "暗龙之巢",
+					
+					"cost" : 
+					{
+						"gold" : 3000,
+						"wood" : 5,
+						"ore" : 2,
+						"gems" : 2,
+						"sulfur" : 5,
+						"mercury" : 2,
+						"crystal" : 2
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "anyOf", [ "dwellingLvl4" ], [ "dwellingLvl4a" ] ], [ "noneOf", [ "dwellingLvl5a" ] ] ],
+					"id" : 34
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "龙族树塔允许你招募生命之龙。",
+					"name" : "龙族树塔",
+					"cost" : 
+					{
+						"gold" : 5000,
+						"wood" : 10
+					},
+					"requires" : [ "allOf", ["special2"] , [ "noneOf", [ "dwellingLvl6a" ] ]],
+					"id" : 35
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "龙之圣殿允许你招募火焰仙女龙。",
+					"name" : "龙之圣殿",
+					"cost" : 
+					{
+						"wood" : 5,
+						"crystal" : 5,
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", [ "anyOf", [ "dwellingLvl5" ],  [ "dwellingLvl5a" ] ], [ "anyOf", [ "dwellingLvl6" ], [ "dwellingLvl6a" ] ], ["mageGuild2"], [ "noneOf", [ "dwellingLvl7a" ] ] ],
+					"id" : 36
+				},
+				"dwellingUpLvl1" :
+				{
+					"description" : "高级生命营地允许你招募地龙。",
+					"name" : "高级地龙之巢",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"id" : 37,
+					"requires" :   ["fort"],
+					"upgrades" : "dwellingLvl1"
+				},
+				
+				"dwellingUpLvl2" :
+				{
+					"description" : "高级火翼龙之巢允许你招募火翼龙。",
+					"name" : "高级火翼龙之巢",
+					"cost" :
+					{
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"id" : 38,
+					"upgrades" : "dwellingLvl2"
+				},				
+				"dwellingUpLvl3" :
+				{
+					"description" : "高级土龙之森允许你招募土龙王。",
+					"name" : "高级土龙之森",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"id" : 39,		
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "高级冠龙营地允许你招募冠龙。",
+					"name" : "高级冠龙营地",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"ore" : 5,
+						"crystal" : 5
+					},
+					"id" : 40,
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" :
+				{
+					
+					"description" : "高级暗龙之巢允许你招募暗夜翼龙。",
+					"name" : "高级暗龙之巢",
+					"cost" : 
+					{
+						"wood" : 2,
+						"gold" : 3000,
+						"ore" : 2,
+						"gems" : 2,
+						"sulfur" : 2,
+						"mercury" : 2,
+						"crystal" : 2
+					},
+					"id" : 41,
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+					"description" : "高级龙族树塔允许你招募生命地龙。",
+					"name" : "高级龙族树塔",
+					"cost" : 
+					{	
+						"gold" : 4000,
+						"wood" : 5,
+						"gems" : 5
+					},
+					"id" : 42,
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "高级龙之圣殿允许你招募始祖仙女龙。",
+					"name" : "高级龙之圣殿",
+					"cost" : 
+					{
+						"wood" : 5,
+						"sulfur" : 20,
+						"ore" : 5,
+						"gold" : 20000
+					},
+					"id" : 43,
+					"upgrades" : "dwellingLvl7"
+				},
+				"dwellingLvl3a" :
+				{
+					"description" : "蝶翼龙树塔允许你招募蝶翼龙幼崽。",
+					"name" : "蝶翼龙树塔",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"requires" :["allOf", ["anyOf", [ "dwellingLvl4" ], [ "dwellingLvl4a"] ], ["fort"], [ "noneOf", [ "dwellingLvl3" ] ] ],
+					"id" : 46
+				},
+				"dwellingLvl4a" :
+				{
+					"description" : "迅龙巢穴允许你招募美丽迅龙。",
+					"name" : "迅龙巢穴",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"ore" : 5
+					},
+					"requires" : [ "allOf", [ "blacksmith" ], [ "dwellingLvl1" ], [ "noneOf", [ "dwellingLvl4" ] ] ],
+					"id" : 47
+				},
+				"dwellingLvl5a" :
+				{
+					"description" : "龙之巢穴允许你招募光辉地龙。",
+					"name" : "龙之巢穴",
+					
+					"cost" : 
+					{
+						"gold" : 3000,
+						"wood" : 5,
+						"ore" : 2,
+						"gems" : 2,
+						"sulfur" : 5,
+						"mercury" : 2,
+						"crystal" : 2
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "anyOf", [ "dwellingLvl4" ], [ "dwellingLvl4a" ] ], [ "noneOf", [ "dwellingLvl5" ] ] ],
+					"id" : 48
+				},
+				"dwellingLvl6a" :
+				{
+					"description" : "水晶龙穴允许你招募原始水晶龙。",
+					"name" : "水晶龙穴",
+					"cost" : 
+					{
+						"gold" : 5000,
+						"crystal" : 5
+					},
+					"requires" : [ "allOf", ["special2"], [ "noneOf", [ "dwellingLvl6" ] ] ],
+					"id" : 49
+				},
+				"dwellingLvl7a" :
+				{
+					"description" : "神龙圣殿允许你招募祖龙。",
+					"name" : "神龙圣殿",
+					"cost" : 
+					{
+						"wood" : 5,
+						"crystal" : 5,
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", [ "anyOf", [ "dwellingLvl5" ], [ "dwellingLvl5a" ] ], [ "anyOf", [ "dwellingLvl6" ], [ "dwellingLvl6a" ] ], ["mageGuild2"], [ "noneOf", [ "dwellingLvl7" ] ] ],
+					"id" : 50
+				},				
+				"dwellingUpLvl3a" :
+				{
+					"description" : "高级蝶翼龙树塔允许你招募蝶翼龙。",
+					"name" : "高级蝶翼龙树塔",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"id" : 53,		
+					"upgrades" : "dwellingLvl3a"
+				},
+				"dwellingUpLvl4a" :
+				{
+					"description" : "高级迅龙巢穴允许你招募美丽迅龙。",
+					"name" : "高级迅龙巢穴",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"ore" : 5,
+						"crystal" : 5
+					},
+					"id" : 54,
+					"upgrades" : "dwellingLvl4a"
+				},
+				"dwellingUpLvl5a" :
+				{
+					
+					"description" : "高级龙之巢穴允许你招募光明地龙。",
+					"name" : "高级龙之巢穴",
+					"cost" : 
+					{
+						"wood" : 2,
+						"gold" : 3000,
+						"ore" : 2,
+						"gems" : 2,
+						"sulfur" : 2,
+						"mercury" : 2,
+						"crystal" : 2
+					},
+					"id" : 55,
+					"upgrades" : "dwellingLvl5a"
+				},
+				"dwellingUpLvl6a" :
+				{
+					"description" : "高级水晶龙穴允许你招募原始毒龙。",
+					"name" : "高级水晶龙穴",
+					"cost" : 
+					{	
+						"gold" : 5000,
+						"sulfur" : 5
+					},
+					"id" : 56,
+					"upgrades" : "dwellingLvl6a"
+				},
+				"dwellingUpLvl7a" :
+				{
+					"description" : "高级神龙圣殿允许你招募龙帝。",
+					"name" : "高级神龙圣殿",
+					"cost" : 
+					{
+						"wood" : 5,
+						"crystal" : 20,
+						"ore" : 5,
+						"gold" : 20000
+					},
+					"id" : 57,
+					"upgrades" : "dwellingLvl7a"
+				},
+				"dwellingUp2Lvl5" :
+				{
+					
+					"description" : "顶级暗龙之巢允许你招募暗夜魔龙。",
+					"name" : "顶级暗龙之巢",
+					"cost" : 
+					{
+						"wood" : 5,
+						"gold" : 3000,
+						"ore" : 5
+					},
+					"id" : 62,
+					"upgrades" : "dwellingUpLvl5"
+				},
+				"dwellingUp2Lvl6" :
+				{
+					"description" : "顶级龙族树塔允许你招募生命圣龙。",
+					"name" : "顶级龙族树塔",
+					"cost" : 
+					{	
+						"gold" : 4000,
+						"wood" : 5
+					},
+					"id" : 63,
+					"upgrades" : "dwellingUpLvl6"
+				},
+				"dwellingUp2Lvl7" :
+				{
+					"description" : "顶级龙之圣殿允许你招募圣翼仙女龙。",
+					"name" : "顶级龙之圣殿",
+					"cost" : 
+					{
+						"wood" : 10,
+						"crystal" : 10,
+						"ore" : 10,
+						"gold" : 20000
+					},
+					"id" : 64,
+					"upgrades" : "dwellingUpLvl7"
+				},
+				"dwellingUp2Lvl5a" :
+				{
+					
+					"description" : "顶级龙之巢穴允许你招募光辉翼龙。",
+					"name" : "顶级龙之巢穴",
+					"cost" : 
+					{
+						"wood" : 5,
+						"gold" : 1000,
+						"ore" : 5,
+					},
+					"id" : 69,
+					"upgrades" : "dwellingUpLvl5a"
+				},
+				"dwellingUp2Lvl6a" :
+				{
+					"description" : "顶级水晶龙穴允许你招募始祖毒龙。",
+					"name" : "顶级水晶龙穴",
+					"cost" : 
+					{	
+						"gold" : 4000,
+						"mercury" : 5 
+					},
+					"id" : 70,
+					"upgrades" : "dwellingUpLvl6a"
+				},
+				"dwellingUp2Lvl7a" :
+				{
+					"description" : "顶级神龙圣殿允许你招募圣龙皇帝。",
+					"name" : "顶级神龙圣殿",
+					"cost" : 
+					{
+						"wood" : 10,
+						"crystal" : 10,
+						"ore" : 10,
+						"gold" : 20000
+					},
+					"id" : 71,
+					"upgrades" : "dwellingUpLvl7a"
+				}
+			}
+		}
+	}
+}

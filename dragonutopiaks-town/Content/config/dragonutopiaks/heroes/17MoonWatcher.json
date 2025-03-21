@@ -1,0 +1,75 @@
+{
+	"dragoneMoonWatcher" :
+	{
+		"class" : "dragonCreator",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/17MoonWatcher/specSmall.png",
+			"specialtyLarge" : "dragonutopiaks/heroes/17MoonWatcher/specLarge.png",
+			"large" : "dragonutopiaks/heroes/17MoonWatcher/heroLarge.png",
+			"small" : "dragonutopiaks/heroes/17MoonWatcher/heroSmall.png"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills":
+		[
+			{ "skill" : "offence", "level": "basic" },
+			{ "skill" : "dragonPower", "level": "basic" }
+		],
+		"spellbook" :
+		[
+		       "magicArrow"
+		],
+		"texts" :
+		{
+			"name" : "望月鸣神天",
+			"biography" : "望月鸣神天从一出生就天然的精通龙语，他在漫长的冒险生涯里，不懈地将他的能力发挥到极致：他和来自世界各地的龙沟通，并将它们成功说服，组建成了恩塔瑞斯大陆上一股不容忽视的势力——龙之国度。他优秀的领导能力使得这个国度的龙都心甘情愿地听从他的指挥，从而构建了一支具有强大凝聚力的军队。",
+			"specialty" :
+			{
+				"description" : "英雄可以对龙之国度的5~7级生物进行三阶升级。",
+				"tooltip" : "特殊奖励：三阶升级",
+				"name" : "三阶升级"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"updataDragonlv5up": {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.dragonlv5up",
+					"addInfo" : "creature.dragonlv5up2"
+				},
+				"updataDragonlv5aup": {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.dragonlv5aup",
+					"addInfo" : "creature.dragonlv5aup2"
+				},
+				"updataDragonlv6up": {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.dragonlv6up",
+					"addInfo" : "creature.dragonlv6up2"
+				},
+				"updataDragonlv6aup": {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.dragonlv6aup",
+					"addInfo" : "creature.dragonlv6aup2"
+				},
+				"updataDragonlv7up": {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.dragonlv7up",
+					"addInfo" : "creature.dragonlv7up2"
+				},
+				"updataDragonlv7aup": {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.dragonlv7aup",
+					"addInfo" : "creature.dragonlv7aup2"
+				}
+			}
+		}
+	}
+}

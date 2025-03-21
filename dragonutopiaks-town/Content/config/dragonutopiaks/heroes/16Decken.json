@@ -1,0 +1,53 @@
+{
+	"dragonedecken" :
+	{
+		"class" : "dragonMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/16Decken/s-spec144.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/16Decken/spec144.bmp",
+			"large" : "dragonutopiaks/heroes/16Decken/hpl119bs.bmp",
+			"small" : "dragonutopiaks/heroes/16Decken/hps119bs.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills":
+		[
+			{ "skill" : "armorer", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "玛瑟格雷亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "英雄在防御术上每级获得5%的奖励。",
+				"tooltip" : "金刚龙心",
+				"name" : "金刚龙心"
+			}
+		},
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}			
+			}
+		}		
+	}
+}

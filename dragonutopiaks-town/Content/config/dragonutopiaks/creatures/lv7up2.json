@@ -1,0 +1,271 @@
+{
+	"dragonlv7up2" : {
+		"advMapAmount" : {"max" : 8, "min" : 3},
+		"aiValue" : 7925,
+		"attack" : 35,
+		"cost" : { "gold" : 6000, "crystal" : 3},
+		"damage" : {"max" : 60, "min" : 40},
+		"defense" : 30,
+		"faction" : "dragonutopiaks",
+		"fightValue" : 7054,
+		"graphics" : {
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 0.8 },
+			"animation" : "dragonutopiaks/creatures/battle/lv7up2.def",
+			"map" : "dragonutopiaks/creatures/map/lv7up2map.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv7up2s.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv7up2b.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile": "dragonutopiaks/creatures/projectile/shot211.def",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 1,
+		"shots" : 8,
+		"hitPoints" : 270,
+		"speed" : 15,
+        "doubleWide" : false,
+		"level" : 7,
+		"name" : { "plural" : "圣翼仙女龙", "singular" : "圣翼仙女龙" },
+		"sound" :
+		{
+			"attack": "FAERATTK.wav",
+			"defend": "FAERDFND.wav",
+			"killed": "FAERKILL.wav",
+			"move": "FAERMOVE.wav",
+			"shoot": "FAERSHOT.wav",
+			"wince": "FAERWNCE.wav"
+		} ,
+		"abilities":
+		{
+			
+           "dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+		   "canFly" : 
+			{	
+			    "type" : "FLYING"	
+			},
+			"canShoot" :
+			{
+				"type" : "SHOOTER"			
+			},
+			"king": 
+			{	
+			   "type" : "KING", 
+			   "val": 0 
+			},
+			"spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 5
+			},
+			"magicMirror":
+			{ 
+			    "type" : "MAGIC_MIRROR",		
+				"val" : 40	
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 10
+			},
+			"spellpower" :	
+			{
+				"type" : "CREATURE_SPELL_POWER",	
+				"val" : 200	
+			},
+			"enchant" :	
+			{
+				"type" : "CREATURE_ENCHANT_POWER",	
+				"val" : 3	
+			},
+			 "deathCloud" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.deathCloud"
+			},
+			"canCast" :
+			{	
+			    "type" : "SPELLCASTER",
+				"subtype" : "spell.protectEarth",	
+				"val" : 3
+			},
+			"castSpeed" :	
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.destroyUndead",
+				"val" : 3	
+			},
+			"canprayer" :
+			{	
+			    "type" : "SPELLCASTER",
+				"subtype" : "spell.prayer",	
+				"val" : 2	
+			},
+			
+			"castsMagicArrow" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.magicArrow",
+				"addInfo" : 22,
+				"val" : 3
+			},
+			"castsIceBolt" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.iceBolt",
+				"addInfo" : 22,
+				"val" : 3
+			},
+			"castsLightningBolt" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.lightningBolt",
+				"addInfo" : 22,
+				"val" : 3
+			},
+			"castsChainLightning" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.chainLightning",
+				"addInfo" : 5,
+				"val" : 3
+			},
+			"castsFrostRing" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.frostRing",
+				"addInfo" : 10,
+				"val" : 3
+			},
+			"castsFireball" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fireball",
+				"addInfo" : 21,
+				"val" : 3
+			},
+			"castsInferno" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.inferno",
+				"addInfo" : 5,
+				"val" : 3
+			},
+			"castsMeteorShower" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.meteorShower",
+				"addInfo" : 5,
+				"val" : 3
+			},
+			"twohexattackbreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"spellResistAura" :
+			{
+				"type" : "SPELL_RESISTANCE_AURA",
+				"val" : 20
+			},
+			"immuneToMind" :
+			{
+				 "type" : "MIND_IMMUNITY"
+			},
+			"RECEPTIVE" :	
+			{	
+			    "type" : "RECEPTIVE"	
+			},
+			"healer" :
+			{
+				"type" : "HEALER"
+			},
+			"noMeleePenalty":
+			{
+				"type": "NO_MELEE_PENALTY"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.prayer",
+					"addInfo" : 3
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 3, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.bless",
+					"addInfo" : 3
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 3, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]	
+	}
+}

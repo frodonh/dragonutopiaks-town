@@ -1,0 +1,140 @@
+{
+	"dragonlv5a":
+	{
+		"name" :
+		{
+			"plural" : "光辉地龙",
+			"singular" : "光辉地龙"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 8
+		},
+		"faction" : "dragonutopiaks",
+		"upgrades":
+		[
+			"dragonlv5aup"
+		],
+        "level" : 5,
+		"attack" : 10,
+		"defense" : 9,
+		"damage" :
+		{
+			 "min" : 12,
+			 "max" : 15
+		},
+		"growth" : 3,
+		"doubleWide" : false,
+		"hitPoints" : 40,
+		"speed" : 8,
+		"shots" : 12,
+		"fightValue" : 824,
+		"aiValue" : 709,
+		"cost" :
+		{
+			"gold" : 600
+		},
+		"graphics" :
+		{
+			"animation" : "dragonutopiaks/creatures/battle/lv5a.def",
+			"map" : "dragonutopiaks/creatures/map/lv5amap.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv5as.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv5ab.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "TREXATTK.wav",
+			"defend": "TREXDFND.wav",
+			"killed": "TREXKILL.wav",
+			"move": "TREXMOVE.wav",
+			"wince": "TREXWNCE.wav"
+         },
+		"abilities" :
+		{
+			
+		    "dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"magicMirror":
+			{ 
+			    "type" : "MAGIC_MIRROR",		
+				"val" : 10	
+			},
+			"magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"val" : 15
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION",
+					"val" : 45
+				},
+				"values" : [ 0, 0, 0, 0, 50, 50, 50, 50, 50, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 21, 24, 27, 30, 33]
+			}
+		]	
+	}
+}
+

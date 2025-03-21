@@ -1,0 +1,133 @@
+{
+	"dragonlv6aup":
+	{
+		"name" :
+		{
+			"plural" : "原始毒龙",
+			"singular" : "原始毒龙"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "dragonutopiaks",
+		"upgrades": ["dragonlv6aup2"],
+		"aiValue" : 1861,
+		"attack" : 17,
+		"doubleWide" : true,
+         "cost" :
+		{
+			"gold" : 1400
+		},
+		"damage" :
+		{
+			 "max" : 25,
+			 "min" : 15
+		},
+		"defense" : 14,
+		"shots" : 24,
+		"fightValue" : 1733,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "dragonutopiaks/creatures/battle/lv6aup.def",
+			"map" : "dragonutopiaks/creatures/map/lv6aupmap.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv6aups.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv6aupb.bmp",			
+			"timeBetweenFidgets" : 1
+               },
+		"growth" : 2,
+		"hitPoints" : 80,
+		"level" : 6,
+		
+		"sound" :
+		{
+			"attack" : "SWDRATTK.wav",
+			"defend" : "SWDRDFND.wav",
+			"killed" : "SWDRKILL.wav",
+			"move"   : "SWDRMOVE.wav",
+			"wince"  : "SWDRWNCE.wav"
+		},
+		"speed" :13,
+		"abilities":
+		{
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"canFly" : 
+			{	
+			    "type" : "FLYING"	
+			},
+			"threeHeads" : 
+			{	
+			     "type" : "THREE_HEADED_ATTACK"	
+			},
+			"magicDamageReduction" : 
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+			    "subtype" : "spellSchool.any",
+				"val" : 20
+			},
+			"poisonous" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 50,
+				"addInfo" : 0
+			},
+			"poisonImm" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.poison",
+				"addInfo" : 0
+			}		
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY",				
+				},
+				"values" : [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ]
+			}
+		]	
+	}
+}

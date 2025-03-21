@@ -1,0 +1,134 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"dragonDwelling1" : {
+				"name" : "地龙之巢",
+				"creatures" : [[ "dragonlv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "dragonutopiaks/creatures/dwellings/dw1.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling2" : {
+				"name" : "火翼龙之巢",
+				"creatures" : [[ "dragonlv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "dragonutopiaks/creatures/dwellings/dw2.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"dragonDwelling3" : {
+				"name" : "土龙之森",
+				"creatures" : [[ "dragonlv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "dragonutopiaks/creatures/dwellings/dw3.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling4" : {
+				"name" : "冠龙营地",
+				"creatures" : [[ "dragonlv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dragonutopiaks/creatures/dwellings/dw4.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling5" : {
+				"name" : "暗龙之巢",
+				"creatures" : [[ "dragonlv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dragonutopiaks/creatures/dwellings/dw5.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling6" : {
+				"name" : "龙族树塔",
+				"creatures" : [[ "dragonlv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dragonutopiaks/creatures/dwellings/dw6.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling7" : {
+				"name" : "龙之圣殿",
+				"creatures" : [[ "dragonlv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "dragonutopiaks/creatures/dwellings/dw7.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			},
+			"dragonDwelling3a" : {
+				"name" : "蝶翼龙树塔",
+				"creatures" : [[ "dragonlv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "dragonutopiaks/creatures/dwellings/dw3a.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling4a" : {
+				"name" : "迅龙巢穴",
+				"creatures" : [[ "dragonlv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dragonutopiaks/creatures/dwellings/dw4a.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling5a" : {
+				"name" : "龙之巢穴",
+				"creatures" : [[ "dragonlv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dragonutopiaks/creatures/dwellings/dw5a.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling6a" : {
+				"name" : "水晶龙穴",
+				"creatures" : [[ "dragonlv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "dragonutopiaks/creatures/dwellings/dw6a.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"dragonDwelling7a" : {
+				"name" : "神龙圣殿",
+				"creatures" : [[ "dragonlv7a" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "dragonutopiaks/creatures/dwellings/dw7a.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

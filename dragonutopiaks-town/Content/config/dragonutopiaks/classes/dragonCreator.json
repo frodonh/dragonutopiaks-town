@@ -1,0 +1,92 @@
+{
+	"dragonCreator" :
+	{
+		"faction" : "dragonutopiaks",
+		"animation" :
+		{
+			"battle" : 
+			{
+                "male"   : "dragonutopiaks/battle/CH23.def",
+				"female" : "dragonutopiaks/battle/CH23.def"
+				
+			},
+		},
+		"mapObject" : {
+			"templates" : {
+				"male"   : { "animation" : "dragonutopiaks/map/AH23_.def" },
+				"female" : { "animation" : "dragonutopiaks/map/AH23_.def" }
+			}
+		},
+		"name" : "龙族创造者",
+		"affinity" : "might",
+	     "commander" : "dragoncommander",
+		"primarySkills" :
+		{
+			"attack"     : 2,
+			"defence"    : 2,
+			"spellpower" : 1,
+			"knowledge"  : 1
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 35,
+			"defence"    : 35,
+			"spellpower" : 15,
+			"knowledge"  : 15
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 30,
+			"defence"    : 30,
+			"spellpower" : 20,
+			"knowledge"  : 20
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 3,
+			"archery"      : 7,
+			"logistics"    : 10,
+			"scouting"     : 2,
+			"diplomacy"    : 4,
+			"navigation"   : 2,
+			"leadership"   : 4,
+			"wisdom"       : 5,
+			"mysticism"    : 1,
+			"luck"         : 4,
+			"ballistics"   : 2,
+			"eagleEye"     : 1,
+			"necromancy"   : 0,
+			"estates"      : 3,
+			"fireMagic"    : 5,
+			"airMagic"     : 5,
+			"waterMagic"   : 5,
+			"earthMagic"   : 5,
+			"scholar"      : 1,
+			"tactics"      : 7,
+			"artillery"    : 2,
+			"learning"     : 1,
+			"offence"      : 7,
+			"armorer"      : 7,
+			"intelligence" : 5,
+			"sorcery"      : 3,
+			"resistance"   : 5,
+			"firstAid"     : 2,
+			"dragonPower"  : 6,
+			"dragonResist" : 10
+		},
+		"defaultTavern" : 0,
+		"tavern" :
+		{
+			"castle"     : 0,
+			"rampart"    : 0,
+			"tower"      : 0,
+			"inferno"    : 0,
+			"necropolis" : 0,
+			"dungeon"    : 0,
+			"stronghold" : 0,
+			"fortress"   : 0,
+			"conflux"    : 0,
+			"dragonutopiaks"    : 4
+		}
+	}
+}

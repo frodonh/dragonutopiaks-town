@@ -1,0 +1,56 @@
+{
+	"dragoneiser" :
+	{
+		"class" : "dragonMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/15Iser/s-spec143.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/15Iser/spec143.bmp",
+			"large" : "dragonutopiaks/heroes/15Iser/hpl122wh.bmp",
+			"small" : "dragonutopiaks/heroes/15Iser/hps122wh.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "airMagic", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "格兰帝列",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "英雄施放气系攻击魔法造成的伤害提高30%，所率领的龙系生物速度+1。",
+				"tooltip" : "天空赐福",
+				"name" : "天空赐福"
+			}
+		},
+		"spellbook" :
+		[
+			"cure"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"airMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.air",
+					"val" : 30,
+					"valueType" : "BASE_NUMBER"
+				},		
+				"vinesSpeed":{
+					"type" : "STACKS_SPEED",
+					"val" : 1,
+				   "limiters" : ["DRAGON_NATURE"]
+				}
+			}
+		}
+	}
+}

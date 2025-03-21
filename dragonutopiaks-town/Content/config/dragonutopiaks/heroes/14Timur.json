@@ -1,0 +1,62 @@
+{
+	"dragonetimur" :
+	{
+		"class" : "dragonMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/14Timur/s-spec142.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/14Timur/spec142.bmp",
+			"large" : "dragonutopiaks/heroes/14Timur/hpl125wh.bmp",
+			"small" : "dragonutopiaks/heroes/14Timur/hps125wh.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+		],
+		"texts" :
+		{
+			"name" : "基尔柯尼斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使所率领的龙系生物生命+5%，不受心智魔法影响，并免疫恐惧特质。",
+				"tooltip" : "翡翠赐福",
+				"name" : "翡翠赐福"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"stackHealth" : { 
+				    "type" : "STACK_HEALTH", 
+					"val" : 5,
+					"valueType": "PERCENT_TO_BASE",
+				    "limiters" : ["DRAGON_NATURE"]
+				},
+				 "immuneToMind" :{
+					 "type" : "MIND_IMMUNITY",
+				    "limiters" : ["DRAGON_NATURE"]
+				},
+				"fearless" : {
+					"type" : "FEARLESS",
+				    "limiters" : ["DRAGON_NATURE"]
+				}				
+			}
+		}		
+	}
+}

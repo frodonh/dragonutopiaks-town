@@ -1,0 +1,89 @@
+{
+	"name" : "dragonutopiaks",
+	"description" : "dragonutopiaks town",
+	"author": "menzhiyuan",
+	"version" : "0.1",
+	"contact": "https://vk.com/",
+	"modType" : "Town",
+	"chinese": {
+		"name": "龙之国度",
+		"description": "新城镇龙之国度。"
+	},
+	"factions" :
+	[
+		"config/dragonutopiaks/town/buildings.json",
+		"config/dragonutopiaks/town/faction.json",
+		"config/dragonutopiaks/town/puzzle.json",
+		"config/dragonutopiaks/town/siege.json",
+		"config/dragonutopiaks/town/structures.json"
+	],
+    "creatures" :
+    [
+		"config/dragonutopiaks/creatures/lv1.json",
+		"config/dragonutopiaks/creatures/lv1up.json",
+		"config/dragonutopiaks/creatures/lv2.json",
+		"config/dragonutopiaks/creatures/lv2up.json",
+		"config/dragonutopiaks/creatures/lv3.json",
+		"config/dragonutopiaks/creatures/lv3up.json",
+		"config/dragonutopiaks/creatures/lv3a.json",
+		"config/dragonutopiaks/creatures/lv3aup.json",
+		"config/dragonutopiaks/creatures/lv4.json",
+		"config/dragonutopiaks/creatures/lv4up.json",
+		"config/dragonutopiaks/creatures/lv4a.json",
+		"config/dragonutopiaks/creatures/lv4aup.json",
+		"config/dragonutopiaks/creatures/lv5.json",
+		"config/dragonutopiaks/creatures/lv5up.json",
+		"config/dragonutopiaks/creatures/lv5up2.json",
+		"config/dragonutopiaks/creatures/lv5a.json",
+		"config/dragonutopiaks/creatures/lv5aup.json",
+		"config/dragonutopiaks/creatures/lv5aup2.json",
+		"config/dragonutopiaks/creatures/lv6.json",
+		"config/dragonutopiaks/creatures/lv6up.json",
+		"config/dragonutopiaks/creatures/lv6up2.json",
+		"config/dragonutopiaks/creatures/lv6a.json",
+		"config/dragonutopiaks/creatures/lv6aup.json",
+		"config/dragonutopiaks/creatures/lv6aup2.json",
+		"config/dragonutopiaks/creatures/lv7.json",
+		"config/dragonutopiaks/creatures/lv7up.json",
+		"config/dragonutopiaks/creatures/lv7up2.json",
+		"config/dragonutopiaks/creatures/lv7a.json",
+		"config/dragonutopiaks/creatures/lv7aup.json",
+		"config/dragonutopiaks/creatures/lv7aup2.json",
+		"config/dragonutopiaks/creatures/commander.json"
+    ],
+	"heroClasses" :
+	[
+		"config/dragonutopiaks/classes/dragonMagic.json",
+		"config/dragonutopiaks/classes/dragonMight.json",
+		"config/dragonutopiaks/classes/dragonCreator.json"
+	 ],
+    "heroes" :
+    [
+		"config/dragonutopiaks/heroes/1Joseph.json",
+		"config/dragonutopiaks/heroes/2Adrian.json",
+		"config/dragonutopiaks/heroes/3Hilika.json",
+		"config/dragonutopiaks/heroes/4Madan.json",
+		"config/dragonutopiaks/heroes/5Jacquenas.json",
+		"config/dragonutopiaks/heroes/6Ibn Fadland.json",
+		"config/dragonutopiaks/heroes/7Uncle Ivan.json",
+		"config/dragonutopiaks/heroes/8Rogue.json",
+		"config/dragonutopiaks/heroes/9Marcus.json",
+		"config/dragonutopiaks/heroes/10Xerxes.json",
+		"config/dragonutopiaks/heroes/11Suleiman.json",
+		"config/dragonutopiaks/heroes/12Sean.json",
+		"config/dragonutopiaks/heroes/13Dalia.json",
+		"config/dragonutopiaks/heroes/14Timur.json",
+		"config/dragonutopiaks/heroes/15Iser.json",
+		"config/dragonutopiaks/heroes/16Decken.json",
+		"config/dragonutopiaks/heroes/17MoonWatcher.json"
+    ],
+    "objects" :
+    [
+		 "config/dragonutopiaks/dwellings.json"
+    ],
+	"skills" :
+    [
+		 "config/dragonutopiaks/skills/dragonPower.json",
+		 "config/dragonutopiaks/skills/dragonResist.json"
+    ]
+}

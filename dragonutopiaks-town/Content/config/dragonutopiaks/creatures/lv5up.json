@@ -1,0 +1,132 @@
+{
+	"dragonlv5up":
+	{
+		"name" :
+		{
+			"plural" : "暗夜翼龙",
+			"singular" : "暗夜翼龙"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction" : "dragonutopiaks",
+        "level" : 5,
+		"attack" : 14,
+		"defense" : 12,
+		"damage" :
+		{
+			 "min" : 12,
+			 "max" : 15
+		},
+		"growth" : 3,
+		"upgrades": ["dragonlv5up2"],
+		"doubleWide" : false,
+		"hitPoints" : 60,
+		"speed" : 10,
+		"shots" : 12,
+		"fightValue" : 864,
+		"aiValue" : 985,
+		"cost" :
+		{
+			"gold" : 750
+		},
+		"graphics" :
+		{
+			"animation" : "dragonutopiaks/creatures/battle/lv5up.def",
+			"map" : "dragonutopiaks/creatures/map/lv5upmap.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv5ups.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv5upb.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "C202ATTK.wav",
+			"defend": "C202DFND.wav",
+			"killed": "C202KILL.wav",
+			"move": "C202MOVE.wav",
+			"wince": "C202WNCE.wav"
+               },
+		"abilities" :
+		{
+			
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+            "darkness" :
+			{
+				"type" : "DARKNESS",
+				"val" : 3
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION",
+					"val" : 45
+				},
+				"values" : [ 0, 0, 0, 0, 50, 50, 50, 50, 50, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 21, 24, 27, 30, 33]
+			}
+		]	
+	}
+}
+
+

@@ -1,0 +1,61 @@
+{
+	"dragonemarcus" :
+	{
+		"class" : "dragonMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/9Marcus/s-spec137.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/9Marcus/spec137.bmp",
+			"large" : "dragonutopiaks/heroes/9Marcus/hpl005pl.bmp",
+			"small" : "dragonutopiaks/heroes/9Marcus/hps005pl.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			},
+		],
+		"texts" :
+		{
+			"name" : "阿库洛诺基亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使敌人士气-1。使敌方施法消耗增加2点。",
+				"tooltip" : "暗之恐惧",
+				"name" : "暗之恐惧"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"moraleReduce" : {
+					"type" : "MORALE",
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"val":-1
+				},
+				"increaseManaCost" :{
+					"type" : "CHANGES_SPELL_COST_FOR_ENEMY",
+					"val" : 2
+				}			
+		    }
+		}
+	}
+}
+
+
+

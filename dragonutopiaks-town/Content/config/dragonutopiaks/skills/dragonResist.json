@@ -1,0 +1,73 @@
+{
+	"dragonResist" : {
+		"name" : "龙抗术",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"basic" : {
+			"images" : {
+				"small" : "dragonutopiaks/skills/dragonResist/dragonResistBasicSmall",
+				"medium" : "dragonutopiaks/skills/dragonResist/dragonResistBasicMedium",
+				"large" : "dragonutopiaks/skills/dragonResist/dragonResistBasicLarge"
+			},
+			"description" : "{初级龙抗术}\n\n初级龙抗术可以让你部队中的龙免疫1~2级魔法。如果英雄同时掌握高级龙力术和高级龙抗术，则所有部队均可被视为龙。",
+			"effects" : {
+				"dragonMagicImmunity" : {
+					"type" : "LEVEL_SPELL_IMMUNITY",
+					"val": 2,
+					"valueType": "INDEPENDENT_MAX",
+					"limiters": ["DRAGON_NATURE"]
+				}
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "dragonutopiaks/skills/dragonResist/dragonResistAdvSmall",
+				"medium" : "dragonutopiaks/skills/dragonResist/dragonResistAdvMedium",
+				"large" : "dragonutopiaks/skills/dragonResist/dragonResistAdvLarge"
+			},
+			"description" : "{中级龙抗术}\n\n中级龙抗术可以让你部队中的龙免疫1~3级魔法。如果英雄同时掌握高级龙力术和高级龙抗术，则所有部队均可被视为龙。",
+			"effects" : {
+				"dragonMagicImmunity" : {
+					"type" : "LEVEL_SPELL_IMMUNITY",
+					"val": 3,
+					"valueType": "INDEPENDENT_MAX",
+					"limiters": ["DRAGON_NATURE"]
+				}
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "dragonutopiaks/skills/dragonResist/dragonResistExpSmall",
+				"medium" : "dragonutopiaks/skills/dragonResist/dragonResistExpMedium",
+				"large" : "dragonutopiaks/skills/dragonResist/dragonResistExpLarge"
+			},
+			"description" : "{高级龙抗术}\n\n高级龙抗术可以让你部队中的龙免疫1~4级魔法。如果英雄同时掌握高级龙力术和高级龙抗术，则所有部队均可被视为龙。",
+			"effects" : {
+				"dragonMagicImmunity" : {
+					"type" : "LEVEL_SPELL_IMMUNITY",
+					"val": 4,
+					"valueType": "INDEPENDENT_MAX",
+					"limiters": ["DRAGON_NATURE"]
+				},
+				"treatCreaturesAsDragon" : {
+					"type" : "DRAGON_NATURE",
+					"limiters" : [
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"parameters" : [
+								"LUCK",
+								null,
+								{
+									"type" : "SECONDARY_SKILL",
+									"id" : "secondarySkill.dragonPower"
+								}
+							]
+						}
+					]
+				}
+			}
+		}
+	}
+}

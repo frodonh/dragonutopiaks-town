@@ -1,0 +1,120 @@
+{
+	"dragonlv6a":
+	{
+		"name" :
+		{
+			"plural" : "原始水晶龙",
+			"singular" : "原始水晶龙"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 5
+		},
+		"faction" : "dragonutopiaks",
+		"upgrades": ["dragonlv6aup"],
+		"aiValue" : 1761,
+		"attack" : 16,
+		"doubleWide" : true,
+        "cost" :
+		{
+			"gold" : 1200
+		},
+		"damage" :
+		{
+			 "max" : 25,
+			 "min" : 15
+		},
+		"defense" : 12,
+		"fightValue" : 1633,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "dragonutopiaks/creatures/battle/lv6a.def",
+			"map" : "dragonutopiaks/creatures/map/lv6amap.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv6as.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv6ab.bmp",
+			"timeBetweenFidgets" : 1
+               },
+		"growth" : 2,
+		"shots" : 24,
+		"hitPoints" : 80,
+		"level" : 6,
+		
+		"sound" :
+		{
+			"attack": "TREXATTK.wav",
+			"defend": "TREXDFND.wav",
+			"killed": "TREXKILL.wav",
+			"move": "TREXMOVE.wav",
+			"wince": "TREXWNCE.wav"
+		},
+		"speed" : 13,
+		"abilities":
+		{
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"magicDamageReduction" : 
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+			    "subtype" : "spellSchool.any",
+				"val" : 15
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY",				
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]	
+	}
+}
+

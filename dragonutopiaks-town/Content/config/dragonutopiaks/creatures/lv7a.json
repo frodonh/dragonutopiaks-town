@@ -1,0 +1,130 @@
+{
+	"dragonlv7a" : {
+		"advMapAmount" : {"max" : 10, "min" : 4},
+		"aiValue" : 4698,
+		"attack" : 18,
+		"cost" : { "gold" :  2500, "crystal" : 1},
+		"damage" : {"max" : 40, "min" : 30},
+		"defense" : 22,
+		"faction" : "dragonutopiaks",
+		"fightValue" : 3946,
+		"graphics" : {
+                        "animationTime" : { "attack" : 1, "idle" : 10, "walk" : 0.8 },
+			"animation" : "dragonutopiaks/creatures/battle/lv7aup.def",
+			"map" : "dragonutopiaks/creatures/map/lv7aupmap.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv7aups.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv7aupb.bmp",				
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 1,
+		"hitPoints" : 200,
+		"speed" : 14,
+        "doubleWide" : true,
+		"level" : 7,
+		"upgrades": ["dragonlv7aup"],
+		"name" : { "plural" : "祖龙", "singular" : "祖龙" },
+		"sound" : {
+			"attack": "C205ATTK.wav",
+			"defend": "C205DFND.wav",
+			"killed": "C205KILL.wav",
+			"move": "C205MOVE.wav",
+			"wince": "C205WNCE.wav"
+		},
+		 "abilities":
+		{
+			"canFly" : 
+			{	
+			    "type" : "FLYING"	
+			},
+			"king": 
+			{	
+			   "type" : "KING", 
+			   "val": 0 
+			},
+			"dragon" :
+			{	
+			    "type" : "DRAGON_NATURE"	
+			},
+			"fireBreath" :	
+			{	
+			     "type" : "WIDE_BREATH"
+			},
+			"spellImmunity" :	
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",	
+				"val" : 5	
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 20
+			},
+		    "immunity": 
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.earth",
+				"val" : 100
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.prayer",
+					"addInfo" : 3
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 3, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]	
+	}
+}

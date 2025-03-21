@@ -1,0 +1,61 @@
+{
+	"dragoneadrian" :
+	{
+		"class" : "dragonMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/2Adrian/s-spec130.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/2Adrian/spec130.bmp",
+			"large" : "dragonutopiaks/heroes/2Adrian/hpl001pl.bmp",
+			"small" : "dragonutopiaks/heroes/2Adrian/hps001pl.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills":
+		[
+			{ "skill" : "armorer", "level": "basic" },
+			{ "skill" : "wisdom", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "德古拉玛格",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "英雄施放土系攻击魔法造成的伤害提高30%，使所属部队生命上限提高5%，再额外提高1点。",
+				"tooltip" : "土之咆哮",
+				"name" : "土之咆哮"
+			}
+		},
+		"spellbook" :
+		[
+			"haste"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"earthMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.earth",
+					"val" : 30,
+					"valueType" : "BASE_NUMBER"
+				},
+				"health1": {
+					"type" : "STACK_HEALTH",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
+				},
+				"health2": {
+					"type" : "STACK_HEALTH",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}	
+	}
+}

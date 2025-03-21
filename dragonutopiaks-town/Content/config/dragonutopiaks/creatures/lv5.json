@@ -1,0 +1,129 @@
+{
+	"dragonlv5":
+	{
+		"name" :
+		{
+			"plural" : "暗夜地龙",
+			"singular" : "暗夜地龙"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 8
+		},
+		"faction" : "dragonutopiaks",
+		"upgrades":
+		[
+			"dragonlv5up"
+		],
+        "level" : 5,
+		"attack" : 12,
+		"defense" : 10,
+		"damage" :
+		{
+			 "min" : 12,
+			 "max" : 15
+		},
+		"growth" : 3,
+		"doubleWide" : false,
+		"hitPoints" : 50,
+		"speed" : 10,
+		"shots" : 12,
+		"fightValue" : 724,
+		"aiValue" : 909,
+		"cost" :
+		{
+			"gold" : 600
+		},
+		"graphics" :
+		{
+			"animation" : "dragonutopiaks/creatures/battle/lv5.def",
+			"map" : "dragonutopiaks/creatures/map/lv5map.def",
+			"iconSmall" : "dragonutopiaks/creatures/iconsSmall/lv5s.bmp",
+			"iconLarge" : "dragonutopiaks/creatures/iconsBig/lv5b.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "TREXATTK.wav",
+			"defend": "TREXDFND.wav",
+			"killed": "TREXKILL.wav",
+			"move": "TREXMOVE.wav",
+			"wince": "TREXWNCE.wav"
+         },
+		"abilities" :
+		{
+			
+		   "dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION",
+					"val" : 45
+				},
+				"values" : [ 0, 0, 0, 0, 50, 50, 50, 50, 50, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 21, 24, 27, 30, 33]
+			}
+		]	
+	}
+}
+

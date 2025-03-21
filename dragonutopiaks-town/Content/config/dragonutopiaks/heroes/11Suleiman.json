@@ -1,0 +1,68 @@
+{
+	"dragonesuleiman" :
+	{
+		"class" : "dragonMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/11Suleiman/s-spec139.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/11Suleiman/spec139.bmp",
+			"large" : "dragonutopiaks/heroes/11Suleiman/hpl125wh.bmp",
+			"small" : "dragonutopiaks/heroes/11Suleiman/hps125wh.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills" :
+		[       
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+		"texts" :
+		{
+			"name" : "梅克撒伊扎尔",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "所率领的龙系生物攻击与防御+2，士气+1。",
+				"tooltip" : "剑术之心",
+				"name" : "剑术之心"
+			}
+		},
+		"spellbook" :
+		[
+			"earthquake"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"attack" : {
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"val" : 2,
+					"limiters" : ["DRAGON_NATURE"]
+				},
+				"defence" : {
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"val" : 2,
+					"limiters" : ["DRAGON_NATURE"]
+				},
+				"morale" : {
+					"type" : "MORALE",
+					"val" : 1,
+					"limiters" : ["DRAGON_NATURE"]
+			    }
+			}
+		}		
+	}
+}

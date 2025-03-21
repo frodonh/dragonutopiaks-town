@@ -1,0 +1,63 @@
+{
+	"dragonehilika" :
+	{
+		"class" : "dragonMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/3Hilika/s-spec131.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/3Hilika/spec131.bmp",
+			"large" : "dragonutopiaks/heroes/3Hilika/HPL001KN.bmp",
+			"small" : "dragonutopiaks/heroes/3Hilika/HPS001KN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv1up", "min" :  5, "max" :  8 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			},
+		],
+		"texts" :
+		{
+			"name" : "姬莉亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "所带领的龙系生物减少10%的远程伤害，在施法时降低2点魔法消耗，最少为1点。",
+				"tooltip" : "星空之键",
+				"name" : "星空之键"
+			}
+		},
+		"spellbook" :
+		[
+		    "magicArrow"
+		],
+		"specialty" : {			
+			"bonuses" : {
+				"damageReduction2" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeRanged",
+					"val" : 10,
+					"limiters" : ["DRAGON_NATURE"]
+					},
+				"reduceSpellCost" : 
+				{
+					"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+					"val" :  2
+				}
+			}
+		}
+	}
+}

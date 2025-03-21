@@ -1,0 +1,58 @@
+{
+	"dragonexerxes" :
+	{
+		"class" : "dragonMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/10Xerxes/s-spec138.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/10Xerxes/spec138.bmp",
+			"large" : "dragonutopiaks/heroes/10Xerxes/hpl128qc.bmp",
+			"small" : "dragonutopiaks/heroes/10Xerxes/hps128qc.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "mysticism", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "芙蕾雅",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "使敌方英雄的力量减少10%，使我方英雄每日恢复5点魔法值。",
+				"tooltip" : "魔法之灵",
+				"name" : "魔法之灵"
+			}
+		},
+		"spellbook" :
+		[
+			"stoneSkin"		
+                ],
+        "specialty" : {
+			"bonuses" : {
+				"reducePower":{
+					"propagator": "BATTLE_WIDE",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"subtype" : "primarySkill.spellpower",
+					"type" : "PRIMARY_SKILL",
+					"val" : -10,
+					"valueType" : "PERCENT_TO_BASE",
+				},
+				"mana" : 
+				{
+					"type": "MANA_REGENERATION",
+					"val": 5,
+					"duration": "PERMANENT"
+				}
+			}	
+		}				
+	}
+}

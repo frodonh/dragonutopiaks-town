@@ -1,0 +1,64 @@
+{
+	"dragoneuncleivan" :
+	{
+		"class" : "dragonMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/7Uncle Ivan/s-spec135.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/7Uncle Ivan/spec135.bmp",
+			"large" : "dragonutopiaks/heroes/7Uncle Ivan/hpl119bs.bmp",
+			"small" : "dragonutopiaks/heroes/7Uncle Ivan/hps119bs.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+
+		"skills" :
+		[
+                       {
+				"level" : "expert",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "博斯洛基亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "施放水系攻击魔法造成的伤害提高30%，施法时降低2点魔法消耗，最少为1点。",
+				"tooltip" : "水之赐福",
+				"name" : "水之赐福"
+			}
+		},
+		"spellbook" :
+		[
+			"frostRing"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"airMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.water",
+					"val" : 30,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				"reduceSpellCost" : 
+			    {
+					"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+					"val" :  2
+			    }
+			}
+		}		
+	}
+}

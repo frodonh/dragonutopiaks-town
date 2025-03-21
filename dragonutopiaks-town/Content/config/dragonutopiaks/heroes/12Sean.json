@@ -1,0 +1,57 @@
+{
+	"dragonesean" :
+	{
+		"class" : "dragonMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "dragonutopiaks/heroes/12Sean/s-spec140.bmp",
+			"specialtyLarge" : "dragonutopiaks/heroes/12Sean/spec140.bmp",
+			"large" : "dragonutopiaks/heroes/12Sean/hpl122wh.bmp",
+			"small" : "dragonutopiaks/heroes/12Sean/hps122wh.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "dragonlv1", "min" : 6, "max" : 9 },
+			{ "creature" : "dragonlv2", "min" :  3, "max" :  6 },
+			{ "creature" : "dragonlv3", "min" :  2, "max" :  3 }
+		],
+		"skills":
+		[
+			{ "skill" : "learning", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "施基阿多拉",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供200个金币,在学习能力上每级得到5%的额外奖励,",
+				"tooltip" : "影之荣耀",
+				"name" : "影之荣耀"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 200
+				},
+				"learning" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}	
+	}
+}
