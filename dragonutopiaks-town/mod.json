@@ -9,6 +9,13 @@
 		"name": "龙之国度",
 		"description": "新城镇龙之国度。"
 	},
+	"english": {
+		"name": "Dragon Utopia",
+		"description": "Dragons town",
+		"translations": [
+			"config/dragonutopiaks/english.json"
+		]
+	},
 	"factions" :
 	[
 		"config/dragonutopiaks/town/buildings.json",
